@@ -13,6 +13,9 @@
 - Put it under `tests/` and name it after the playground scenario it covers.
 - Keep one scenario per file unless two checks are tightly coupled to the same page behavior.
 - Start from `page.goto()` with a path relative to `baseURL`, then interact using user-facing locators first.
+- For a new challenge, first go to the target challenge page itself and read the instruction and scenario text on that page before implementing the test.
+- Build the test around the scenario steps described on the challenge page until the page goal is satisfied.
+- Only start from Home when the challenge instructions make Home-page navigation part of the behavior being tested.
 - Prefer assertions that prove the scenario outcome, not just that a click happened.
 - Handle dialogs, visibility changes, navigation, and retries explicitly when the page behavior requires them.
 - Refactor codegen output before keeping it so the final spec is readable and stable.
